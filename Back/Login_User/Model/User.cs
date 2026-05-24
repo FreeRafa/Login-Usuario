@@ -3,7 +3,7 @@
     public class User
     {
         public int Id { get; set; }
-        public string? Nome { get; set; } = string .Empty;
+        public string Nome { get; set; } //= string .Empty;
         public string? Email { get; set; } = string.Empty; 
         public string? SenhaHash { get; set; } = string.Empty; // Armazena o hash da senha, não a senha em texto puro
         public bool Ativo { get; set; } = true;

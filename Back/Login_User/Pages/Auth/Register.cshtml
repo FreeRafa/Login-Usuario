@@ -1,0 +1,556 @@
+﻿@page
+@model Login_User.Pages.RegisterModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Conta — Login User</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+            *, *::before, *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            :root {
+                --deep: #060212;
+                --card: rgba(18, 6, 40, 0.88);
+                --accent: #9d4edd;
+                --accent2: #c77dff;
+                --glow: #e0aaff;
+                --text: #f0e6ff;
+                --muted: #b09ac0;
+                --border: rgba(157, 78, 221, 0.35);
+                --input-bg: rgba(255,255,255,0.05);
+                --success: #4ade80;
+            }
+
+            html, body {
+                height: 100%;
+                font-family: 'Outfit', sans-serif;
+            }
+
+            body {
+                background-color: var(--deep);
+                background-image: radial-gradient(ellipse 70% 60% at 80% 90%, rgba(106, 13, 173, 0.5) 0%, transparent 60%), radial-gradient(ellipse 50% 50% at 15% 15%, rgba(157, 78, 221, 0.3) 0%, transparent 55%), radial-gradient(ellipse 40% 40% at 60% 40%, rgba(72, 12, 168, 0.2) 0%, transparent 70%);
+                min-height: 100vh;
+                display: flex;
+                align-items: stretch;
+                overflow-x: hidden;
+                position: relative;
+            }
+
+                body::before, body::after {
+                    content: '';
+                    position: absolute;
+                    border-radius: 50%;
+                    filter: blur(90px);
+                    pointer-events: none;
+                    z-index: 0;
+                }
+
+                body::before {
+                    width: 500px;
+                    height: 500px;
+                    background: radial-gradient(circle, rgba(100, 20, 200, 0.35), transparent 70%);
+                    top: -120px;
+                    right: -100px;
+                    animation: drift1 14s ease-in-out infinite alternate;
+                }
+
+                body::after {
+                    width: 380px;
+                    height: 380px;
+                    background: radial-gradient(circle, rgba(180, 100, 255, 0.28), transparent 70%);
+                    bottom: -60px;
+                    left: 30%;
+                    animation: drift2 18s ease-in-out infinite alternate;
+                }
+
+            @@keyframes drift1 {
+                to {
+                    transform: translate(-40px, 50px);
+                }
+            }
+
+            @@keyframes drift2 {
+                to {
+                    transform: translate(50px, -40px);
+                }
+            }
+
+            .shapes {
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                pointer-events: none;
+                overflow: hidden;
+            }
+
+            .shape {
+                position: absolute;
+                border-radius: 50%;
+                border: 1px solid rgba(180, 100, 255, 0.12);
+            }
+
+            .shape-1 {
+                width: 700px;
+                height: 700px;
+                top: -250px;
+                right: -200px;
+            }
+
+            .shape-2 {
+                width: 300px;
+                height: 300px;
+                bottom: -100px;
+                right: 100px;
+                border-color: rgba(157,78,221,0.08);
+            }
+
+            /* Decorative diamond */
+            .diamond {
+                position: absolute;
+                top: 50%;
+                left: 42%;
+                transform: translateY(-50%) rotate(45deg);
+                width: 28px;
+                height: 28px;
+                border: 2px solid rgba(180, 100, 255, 0.22);
+                z-index: 1;
+            }
+
+            .diamond-sm {
+                position: absolute;
+                top: 35%;
+                left: 38%;
+                transform: rotate(45deg);
+                width: 14px;
+                height: 14px;
+                border: 1px solid rgba(220, 160, 255, 0.15);
+                z-index: 1;
+            }
+
+            .page {
+                display: flex;
+                width: 100%;
+                min-height: 100vh;
+                position: relative;
+                z-index: 1;
+            }
+
+            /* Left panel */
+            .left {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 60px 80px;
+                position: relative;
+            }
+
+            .left-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(157, 78, 221, 0.18);
+                border: 1px solid rgba(157, 78, 221, 0.3);
+                border-radius: 100px;
+                padding: 6px 18px;
+                font-size: 12px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: var(--accent2);
+                margin-bottom: 36px;
+                width: fit-content;
+                animation: fadeUp 0.6s ease both;
+            }
+
+                .left-badge::before {
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: var(--success);
+                    box-shadow: 0 0 8px var(--success);
+                }
+
+            .welcome-title {
+                font-family: 'Cinzel', serif;
+                font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+                font-weight: 600;
+                color: var(--text);
+                line-height: 1.15;
+                margin-bottom: 20px;
+                animation: fadeUp 0.7s ease 0.1s both;
+            }
+
+                .welcome-title span {
+                    background: linear-gradient(135deg, #c77dff, #e0aaff);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+
+            .welcome-sub {
+                font-size: 1rem;
+                color: var(--muted);
+                line-height: 1.75;
+                max-width: 380px;
+                animation: fadeUp 0.7s ease 0.2s both;
+            }
+
+            .perks {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                margin-top: 44px;
+                animation: fadeUp 0.7s ease 0.3s both;
+            }
+
+            .perk {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 0.9rem;
+                color: var(--muted);
+            }
+
+            .perk-icon {
+                width: 30px;
+                height: 30px;
+                border-radius: 8px;
+                background: rgba(157, 78, 221, 0.2);
+                border: 1px solid rgba(157, 78, 221, 0.25);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                flex-shrink: 0;
+            }
+
+            /* Right panel */
+            .right {
+                width: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 32px 50px;
+            }
+
+            .card {
+                width: 100%;
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: 24px;
+                padding: 40px 38px;
+                backdrop-filter: blur(20px);
+                box-shadow: 0 30px 80px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05);
+                animation: slideIn 0.6s ease both;
+            }
+
+            .card-header {
+                margin-bottom: 28px;
+            }
+
+            .card-title {
+                font-family: 'Cinzel', serif;
+                font-size: 1.55rem;
+                font-weight: 600;
+                color: var(--text);
+                margin-bottom: 8px;
+            }
+
+            .card-sub {
+                font-size: 0.88rem;
+                color: var(--muted);
+            }
+
+            .field {
+                margin-bottom: 18px;
+            }
+
+                .field label {
+                    display: block;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    color: var(--muted);
+                    text-transform: uppercase;
+                    margin-bottom: 7px;
+                }
+
+                .field input {
+                    width: 100%;
+                    background: var(--input-bg);
+                    border: 1px solid var(--border);
+                    border-radius: 12px;
+                    padding: 12px 16px;
+                    font-family: 'Outfit', sans-serif;
+                    font-size: 0.93rem;
+                    color: var(--text);
+                    outline: none;
+                    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+                }
+
+                    .field input::placeholder {
+                        color: rgba(176,154,192,0.5);
+                    }
+
+                    .field input:focus {
+                        border-color: var(--accent);
+                        background: rgba(157, 78, 221, 0.08);
+                        box-shadow: 0 0 0 3px rgba(157, 78, 221, 0.15);
+                    }
+
+                    .field input.valid {
+                        border-color: rgba(74, 222, 128, 0.5);
+                    }
+
+            /* Password strength */
+            .strength-bar {
+                display: flex;
+                gap: 4px;
+                margin-top: 8px;
+            }
+
+            .strength-segment {
+                flex: 1;
+                height: 3px;
+                border-radius: 2px;
+                background: rgba(255,255,255,0.08);
+                transition: background 0.3s;
+            }
+
+            .strength-label {
+                font-size: 0.75rem;
+                color: var(--muted);
+                margin-top: 4px;
+            }
+
+            .text-danger {
+                color: #f87171;
+                font-size: 0.8rem;
+                margin-top: 4px;
+                display: block;
+            }
+
+            .btn-primary {
+                width: 100%;
+                background: linear-gradient(135deg, #7b2fbe, #9d4edd, #c77dff);
+                border: none;
+                border-radius: 12px;
+                padding: 14px;
+                font-family: 'Outfit', sans-serif;
+                font-size: 0.93rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: white;
+                cursor: pointer;
+                transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+                box-shadow: 0 4px 24px rgba(157, 78, 221, 0.45);
+                margin-top: 8px;
+                margin-bottom: 24px;
+            }
+
+                .btn-primary:hover {
+                    opacity: 0.9;
+                    transform: translateY(-1px);
+                    box-shadow: 0 8px 32px rgba(157, 78, 221, 0.6);
+                }
+
+            .terms {
+                font-size: 0.8rem;
+                color: var(--muted);
+                text-align: center;
+                margin-bottom: 20px;
+                line-height: 1.5;
+            }
+
+                .terms a {
+                    color: var(--accent2);
+                    text-decoration: none;
+                }
+
+                    .terms a:hover {
+                        color: var(--glow);
+                    }
+
+            .login-link {
+                text-align: center;
+                font-size: 0.88rem;
+                color: var(--muted);
+            }
+
+                .login-link a {
+                    color: var(--accent2);
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+
+                    .login-link a:hover {
+                        color: var(--glow);
+                    }
+
+            @@keyframes fadeUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @@keyframes slideIn {
+                from {
+                    opacity: 0;
+                    transform: translateX(30px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            @@media (max-width: 800px) {
+                .left {
+                    display: none;
+                }
+
+                .right {
+                    width: 100%;
+                    padding: 24px;
+                }
+
+                .card {
+                    border-radius: 20px;
+                    padding: 32px 24px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+    <div class="diamond"></div>
+    <div class="diamond-sm"></div>
+
+    <div class="page">
+        <div class="left">
+            <div class="left-badge">Nova conta</div>
+            <h1 class="welcome-title">
+                Comece sua<br><span>jornada</span>
+            </h1>
+            <p class="welcome-sub">
+                Crie sua conta em segundos e tenha acesso completo ao sistema.
+            </p>
+            <div class="perks">
+                <div class="perk">
+                    <div class="perk-icon">✦</div>
+                    Acesso seguro com senha criptografada
+                </div>
+                <div class="perk">
+                    <div class="perk-icon">◈</div>
+                    Cadastro rápido e simples
+                </div>
+                <div class="perk">
+                    <div class="perk-icon">⬡</div>
+                    Seus dados protegidos
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Criar Conta</h2>
+                    <p class="card-sub">Preencha os campos abaixo para se registrar</p>
+                </div>
+
+                <form method="post" asp-page="/Register">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger" style="margin-bottom:14px;"></div>
+
+                    <div class="field">
+                        <label asp-for="Input.Nome">Nome completo</label>
+                        <input asp-for="Input.Nome" type="text" placeholder="Seu nome" autocomplete="name" />
+                        <span asp-validation-for="Input.Nome" class="text-danger"></span>
+                    </div>
+
+                    <div class="field">
+                        <label asp-for="Input.Email">E-mail</label>
+                        <input asp-for="Input.Email" type="email" placeholder="voce@email.com" autocomplete="email" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="field">
+                        <label asp-for="Input.Senha">Senha</label>
+                        <input asp-for="Input.Senha" type="password" placeholder="Min. 8 caracteres" id="senhaInput" autocomplete="new-password" />
+                        <div class="strength-bar">
+                            <div class="strength-segment" id="s1"></div>
+                            <div class="strength-segment" id="s2"></div>
+                            <div class="strength-segment" id="s3"></div>
+                            <div class="strength-segment" id="s4"></div>
+                        </div>
+                        <div class="strength-label" id="strengthLabel"></div>
+                        <span asp-validation-for="Input.Senha" class="text-danger"></span>
+                    </div>
+
+                    <div class="field">
+                        <label asp-for="Input.ConfirmarSenha">Confirmar senha</label>
+                        <input asp-for="Input.ConfirmarSenha" type="password" placeholder="Repita a senha" autocomplete="new-password" />
+                        <span asp-validation-for="Input.ConfirmarSenha" class="text-danger"></span>
+                    </div>
+
+                    <div class="terms">
+                        Ao criar conta, você concorda com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>.
+                    </div>
+
+                    <button type="submit" class="btn-primary">Criar Conta</button>
+                </form>
+
+                <div class="login-link">
+                    Já tem conta? <a asp-page="/Auth/Login">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            const input = document.getElementById('senhaInput');
+            const segs = [document.getElementById('s1'),document.getElementById('s2'),document.getElementById('s3'),document.getElementById('s4')];
+            const label = document.getElementById('strengthLabel');
+            const levels = [
+                {color:'#f87171', text:'Muito fraca'},
+                {color:'#fb923c', text:'Fraca'},
+                {color:'#facc15', text:'Média'},
+                {color:'#4ade80', text:'Forte'}
+            ];
+            input.addEventListener('input', () => {
+                const v = input.value;
+                let score = 0;
+                if (v.length >= 8) score++;
+                if (/[A-Z]/.test(v)) score++;
+                if (/[0-9]/.test(v)) score++;
+                if (/[^A-Za-z0-9]/.test(v)) score++;
+                segs.forEach((s, i) => {
+                    s.style.background = i < score && v.length > 0 ? levels[score-1].color : 'rgba(255,255,255,0.08)';
+                });
+                label.textContent = v.length > 0 ? levels[Math.max(0, score-1)].text : '';
+                label.style.color = v.length > 0 ? levels[Math.max(0, score-1)].color : '';
+            });
+    </script>
+</body>
+</html>

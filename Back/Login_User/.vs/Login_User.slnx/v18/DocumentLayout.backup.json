@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\pages\\auth\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:pages\\auth\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\pages\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:pages\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\pages\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:pages\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\pages\\auth\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:pages\\auth\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\servico\\servicouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:servico\\servicouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|c:\\users\\rafav\\desktop\\dev\\projetos\\projetos pessoais github\\login_user\\back\\login_user\\repositorio\\repositoriouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5984FBB-E2FA-4BF2-891C-973EDCE07084}|Login_User.csproj|solutionrelative:repositorio\\repositoriouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Model\\User.cs*",
+              "RelativeToolTip": "Model\\User.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T15:03:41.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Dashboard\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Dashboard\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T12:02:31.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAANABAAAAAAAAAAAAAAEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-24T12:01:57.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Auth\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Auth\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Auth\\Register.cshtml.cs",
+              "RelativeToolTip": "Pages\\Auth\\Register.cshtml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:59:00.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Auth\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Auth\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Auth\\Login.cshtml.cs*",
+              "RelativeToolTip": "Pages\\Auth\\Login.cshtml.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA8wBwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:58:15.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Pages\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAAQCAAAAAAAAAAAmwCwCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-24T11:55:15.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Pages\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Pages\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAAABACAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-24T11:54:53.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:38:18.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServicoUser.cs",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Servico\\ServicoUser.cs",
+              "RelativeDocumentMoniker": "Servico\\ServicoUser.cs",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Servico\\ServicoUser.cs",
+              "RelativeToolTip": "Servico\\ServicoUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:38:08.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RepositorioUser.cs",
+              "DocumentMoniker": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Repositorio\\RepositorioUser.cs",
+              "RelativeDocumentMoniker": "Repositorio\\RepositorioUser.cs",
+              "ToolTip": "C:\\Users\\rafav\\Desktop\\DEV\\Projetos\\Projetos Pessoais GitHub\\Login_User\\Back\\Login_User\\Repositorio\\RepositorioUser.cs",
+              "RelativeToolTip": "Repositorio\\RepositorioUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T11:34:51.674Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

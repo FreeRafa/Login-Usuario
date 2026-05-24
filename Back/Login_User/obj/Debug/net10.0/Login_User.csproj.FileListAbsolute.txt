@@ -130,3 +130,4 @@ C:\Users\rafav\Desktop\DEV\Projetos\Projetos Pessoais GitHub\Login_User\Back\Log
 C:\Users\rafav\Desktop\DEV\Projetos\Projetos Pessoais GitHub\Login_User\Back\Login_User\obj\Debug\net10.0\Login_User.pdb
 C:\Users\rafav\Desktop\DEV\Projetos\Projetos Pessoais GitHub\Login_User\Back\Login_User\obj\Debug\net10.0\Login_User.genruntimeconfig.cache
 C:\Users\rafav\Desktop\DEV\Projetos\Projetos Pessoais GitHub\Login_User\Back\Login_User\obj\Debug\net10.0\ref\Login_User.dll
+C:\Users\rafav\Desktop\DEV\Projetos\Projetos Pessoais GitHub\Login_User\Back\Login_User\obj\Debug\net10.0\Login_User.sourcelink.json
